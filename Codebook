@@ -58,7 +58,9 @@ details]
 ##Description of the variables in the "all_data_tidy.txt" file
 General description of the file including:
  - Dimensions of the dataset: 180 obs. of 68 variables
- - Summary of the data: contains the average (mean) of each variable for each activity and each subject
+ - Summary of the data: contains the average (mean) and standard deviation of each variable for each activity and each 
+ subject; please note, I judged the instructions "Extracts only the measurements on the mean and standard deviation..."
+ not to include the mean frequency.
  - Variables present in the dataset: 
  [1] "Subject": integer - 1 to 30, indicating experiment participants 1 to 30.                                                    
  [2] "Activity": factor w/ 6 levels "Laying", "Sitting", "Standing", "Walking", "Walking_Downstairs", "Walking_Upstairs"                                                  
