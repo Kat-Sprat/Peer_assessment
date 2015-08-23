@@ -143,9 +143,6 @@ General description of the file including:
 [80] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.Std_Dev"     
 [81] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.MeanFreq"
 
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
 ##Sources
 Codebook format adapted from https://gist.github.com/JorisSchut/dbc1fc0402f28cad9b41, as suggested by the Getting and 
 Cleaning Data course Community site: http://datasciencespecialization.github.io/getclean/ 
