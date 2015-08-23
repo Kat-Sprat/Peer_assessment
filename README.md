@@ -33,7 +33,7 @@ Description of the script run_analysis.R, broken down by project instruction sta
 
 2.1. Extracts mean and SD values using grepl() (search for matches to a character vector) - searches col names for 'mean' 'std' 'Subject' & 'ActivityId'. Uses this to subset "all_data", resulting in data frame "all_data_mean_sd".
 
-n.b. failed to remove 'MeanFreq' mean frequency values at this stage - those columns were removed when creating the tidy data set, as I judged the instructions "Extracts only the measurements on the mean and standard deviation..." not to include the mean frequency.
+n.b. failed to remove 'MeanFreq' mean frequency values at this stage - those columns were removed at 5.2 when creating the tidy data set, as I judged the instructions "Extracts only the measurements on the mean and standard deviation..." not to include the mean frequency.
 
       "3. Uses descriptive activity names to name the activities in the data set"
 
