@@ -57,7 +57,7 @@ details]
 
 ##Description of the variables in the "all_data_tidy.txt" file
 General description of the file including:
- - Dimensions of the dataset: 180 obs. of 81 variables
+ - Dimensions of the dataset: 180 obs. of 68 variables
  - Summary of the data: contains the average (mean) of each variable for each activity and each subject
  - Variables present in the dataset: 
  [1] "Subject": integer - 1 to 30, indicating experiment participants 1 to 30.                                                    
