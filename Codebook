@@ -55,16 +55,95 @@ and frequency domain.
 activity and each subject. [please see: https://github.com/Kat-Sprat/Peer_assessment/blob/master/README.md for further 
 details]
 
-##Description of the variables in the all_data_tidy.txt file
+##Description of the variables in the "all_data_tidy.txt" file
 General description of the file including:
  - Dimensions of the dataset: 180 obs. of 81 variables
- - Summary of the data: 
- - Variables present in the dataset: "Subject" "Activity" 
+ - Summary of the data: contains the average (mean) of each variable for each activity and each subject
+ - Variables present in the dataset: 
+ [1] "Subject" - integer: 1 to 30                                                    
+ [2] "Activity" -                                                   
+ [3] "TimeDomain.BodyAccelerometer.Mean.X"                        
+ [4] "TimeDomain.BodyAccelerometer.Mean.Y"                        
+ [5] "TimeDomain.BodyAccelerometer.Mean.Z"                        
+ [6] "TimeDomain.BodyAccelerometer.Std_Dev.X"                     
+ [7] "TimeDomain.BodyAccelerometer.Std_Dev.Y"                     
+ [8] "TimeDomain.BodyAccelerometer.Std_Dev.Z"                     
+ [9] "TimeDomain.GravityAccelerometer.Mean.X"                     
+[10] "TimeDomain.GravityAccelerometer.Mean.Y"                     
+[11] "TimeDomain.GravityAccelerometer.Mean.Z"                     
+[12] "TimeDomain.GravityAccelerometer.Std_Dev.X"                  
+[13] "TimeDomain.GravityAccelerometer.Std_Dev.Y"                  
+[14] "TimeDomain.GravityAccelerometer.Std_Dev.Z"                  
+[15] "TimeDomain.BodyAccelerometerJerk.Mean.X"                    
+[16] "TimeDomain.BodyAccelerometerJerk.Mean.Y"                    
+[17] "TimeDomain.BodyAccelerometerJerk.Mean.Z"                    
+[18] "TimeDomain.BodyAccelerometerJerk.Std_Dev.X"                 
+[19] "TimeDomain.BodyAccelerometerJerk.Std_Dev.Y"                 
+[20] "TimeDomain.BodyAccelerometerJerk.Std_Dev.Z"                 
+[21] "TimeDomain.BodyGyroscope.Mean.X"                            
+[22] "TimeDomain.BodyGyroscope.Mean.Y"                            
+[23] "TimeDomain.BodyGyroscope.Mean.Z"                            
+[24] "TimeDomain.BodyGyroscope.Std_Dev.X"                         
+[25] "TimeDomain.BodyGyroscope.Std_Dev.Y"                         
+[26] "TimeDomain.BodyGyroscope.Std_Dev.Z"                         
+[27] "TimeDomain.BodyGyroscopeJerk.Mean.X"                        
+[28] "TimeDomain.BodyGyroscopeJerk.Mean.Y"                        
+[29] "TimeDomain.BodyGyroscopeJerk.Mean.Z"                        
+[30] "TimeDomain.BodyGyroscopeJerk.Std_Dev.X"                     
+[31] "TimeDomain.BodyGyroscopeJerk.Std_Dev.Y"                     
+[32] "TimeDomain.BodyGyroscopeJerk.Std_Dev.Z"                     
+[33] "TimeDomain.BodyAccelerometerMagnitude.Mean"                 
+[34] "TimeDomain.BodyAccelerometerMagnitude.Std_Dev"              
+[35] "TimeDomain.GravityAccelerometerMagnitude.Mean"              
+[36] "TimeDomain.GravityAccelerometerMagnitude.Std_Dev"           
+[37] "TimeDomain.BodyAccelerometerJerkMagnitude.Mean"             
+[38] "TimeDomain.BodyAccelerometerJerkMagnitude.Std_Dev"          
+[39] "TimeDomain.BodyGyroscopeMagnitude.Mean"                     
+[40] "TimeDomain.BodyGyroscopeMagnitude.Std_Dev"                  
+[41] "TimeDomain.BodyGyroscopeJerkMagnitude.Mean"                 
+[42] "TimeDomain.BodyGyroscopeJerkMagnitude.Std_Dev"              
+[43] "FrequencyDomain.BodyAccelerometer.Mean.X"                   
+[44] "FrequencyDomain.BodyAccelerometer.Mean.Y"                   
+[45] "FrequencyDomain.BodyAccelerometer.Mean.Z"                   
+[46] "FrequencyDomain.BodyAccelerometer.Std_Dev.X"                
+[47] "FrequencyDomain.BodyAccelerometer.Std_Dev.Y"                
+[48] "FrequencyDomain.BodyAccelerometer.Std_Dev.Z"                
+[49] "FrequencyDomain.BodyAccelerometer.MeanFreq.X"               
+[50] "FrequencyDomain.BodyAccelerometer.MeanFreq.Y"               
+[51] "FrequencyDomain.BodyAccelerometer.MeanFreq.Z"               
+[52] "FrequencyDomain.BodyAccelerometerJerk.Mean.X"               
+[53] "FrequencyDomain.BodyAccelerometerJerk.Mean.Y"               
+[54] "FrequencyDomain.BodyAccelerometerJerk.Mean.Z"               
+[55] "FrequencyDomain.BodyAccelerometerJerk.Std_Dev.X"            
+[56] "FrequencyDomain.BodyAccelerometerJerk.Std_Dev.Y"            
+[57] "FrequencyDomain.BodyAccelerometerJerk.Std_Dev.Z"            
+[58] "FrequencyDomain.BodyAccelerometerJerk.MeanFreq.X"           
+[59] "FrequencyDomain.BodyAccelerometerJerk.MeanFreq.Y"           
+[60] "FrequencyDomain.BodyAccelerometerJerk.MeanFreq.Z"           
+[61] "FrequencyDomain.BodyGyroscope.Mean.X"                       
+[62] "FrequencyDomain.BodyGyroscope.Mean.Y"                       
+[63] "FrequencyDomain.BodyGyroscope.Mean.Z"                       
+[64] "FrequencyDomain.BodyGyroscope.Std_Dev.X"                    
+[65] "FrequencyDomain.BodyGyroscope.Std_Dev.Y"                    
+[66] "FrequencyDomain.BodyGyroscope.Std_Dev.Z"                    
+[67] "FrequencyDomain.BodyGyroscope.MeanFreq.X"                   
+[68] "FrequencyDomain.BodyGyroscope.MeanFreq.Y"                   
+[69] "FrequencyDomain.BodyGyroscope.MeanFreq.Z"                   
+[70] "FrequencyDomain.BodyAccelerometerMagnitude.Mean"            
+[71] "FrequencyDomain.BodyAccelerometerMagnitude.Std_Dev"         
+[72] "FrequencyDomain.BodyAccelerometerMagnitude.MeanFreq"        
+[73] "FrequencyDomain.BodyBodyAccelerometerJerkMagnitude.Mean"    
+[74] "FrequencyDomain.BodyBodyAccelerometerJerkMagnitude.Std_Dev" 
+[75] "FrequencyDomain.BodyBodyAccelerometerJerkMagnitude.MeanFreq"
+[76] "FrequencyDomain.BodyBodyGyroscopeMagnitude.Mean"            
+[77] "FrequencyDomain.BodyBodyGyroscopeMagnitude.Std_Dev"         
+[78] "FrequencyDomain.BodyBodyGyroscopeMagnitude.MeanFreq"        
+[79] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.Mean"        
+[80] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.Std_Dev"     
+[81] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.MeanFreq"
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+
 
 Some information on the variable including:
  - Class of the variable
