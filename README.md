@@ -33,7 +33,7 @@ Description of the script run_analysis.R, broken down by project instruction sta
 
 2.1. Extracts mean and SD values using grepl() (search for matches to a character vector) - searches col names for 'mean' 'std' 'Subject' & 'ActivityId'. Uses this to subset "all_data", resulting in data frame "all_data_mean_sd".
 
-n.b. failed to remove 'MeanFreq' mean frequency values at this stage - those columns were removed at 5.2 when creating the tidy data set, as I judged the instructions "Extracts only the measurements on the mean and standard deviation..." not to include the mean frequency.
+n.b. failed to remove 'MeanFreq' mean frequency values at this stage - those columns were removed at 5.2 when creating the tidy data set.
 
       "3. Uses descriptive activity names to name the activities in the data set"
 
@@ -48,6 +48,6 @@ n.b. failed to remove 'MeanFreq' mean frequency values at this stage - those col
 
 5.1 Creates tidy dataset using ddply to split data frame "all_data_mean_sd" by variables "subject" & "activity", & apply the mean function column-wise, using numcolwise(). Results in data frame "all_data_tidy_ish"
 
-5.2 Remove columns containing ".MeanFreq" values using !grepl. (same call & syntax should have worked at 2.1, but didn't - have not yet figured out where the error was.) Results in data frame "all_data_tidy"
+5.2 Remove columns containing ".MeanFreq" values using !grepl. (same call & syntax should have worked at 2.1, but didn't - have not yet figured out where my error was.) Results in data frame "all_data_tidy"
 
 5.3 Writes "all_data_tidy.txt" file using write.table(), specifying row.name=FALSE, as instructed.
