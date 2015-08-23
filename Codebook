@@ -60,8 +60,9 @@ General description of the file including:
  - Dimensions of the dataset: 180 obs. of 81 variables
  - Summary of the data: contains the average (mean) of each variable for each activity and each subject
  - Variables present in the dataset: 
- [1] "Subject" - integer: 1 to 30                                                    
- [2] "Activity" -                                                   
+ [1] "Subject": integer - 1 to 30, indicating experiment participants 1 to 30.                                                    
+ [2] "Activity": factor w/ 6 levels "Laying", "Sitting", "Standing", "Walking", "Walking_Downstairs", "Walking_Upstairs"                                                  
+ All following variables are numeric values, that record the mean or standard deviation for  
  [3] "TimeDomain.BodyAccelerometer.Mean.X"                        
  [4] "TimeDomain.BodyAccelerometer.Mean.Y"                        
  [5] "TimeDomain.BodyAccelerometer.Mean.Z"                        
@@ -141,17 +142,6 @@ General description of the file including:
 [79] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.Mean"        
 [80] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.Std_Dev"     
 [81] "FrequencyDomain.BodyBodyGyroscopeJerkMagnitude.MeanFreq"
-
-
-
-
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
 ####Notes on variable 1:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
