@@ -28,7 +28,8 @@ Description of the script run_analysis.R, broken down by project instruction sta
 
 1.3. Applies labels to columns of "all_data" from "features" data set using rbind()
 
-      "2. Extracts only the measurements on the mean and standard deviation for each measurement."
+      "2. Extracts only the measurements on the mean and standard deviation for each 
+      measurement."
 
 2.1. Extracts mean and SD values using grepl() (search for matches to a character vector) - searches col names for 'mean' 'std' 'Subject' & 'ActivityId'. Uses this to subset "all_data", resulting in data frame "all_data_mean_sd".
 
