@@ -1,6 +1,6 @@
 This README.md describes how the script run_analysis.R works.
 
-Project instructions(partial):
+Project instructions (partial):
 
 "Here are the data for the project: 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
@@ -22,7 +22,7 @@ Description of the script run_analysis.R, broken down by project instruction sta
 
       "1. Merges the training and the test sets to create one data set."
 
-1.1. Reads in the data tables using read.table (read in files: "X_train.txt"; "X_test.txt"; "y_train.txt"; "y_test.txt"; "subject_train.txt"; "subject_test.txt"; "features.txt" (specified colClasses = c("character")); "activity_labels.txt" (specified col.names = c("ActivityId", "Activity"))
+1.1. Reads in the data tables using read.table (read in files: "X_train.txt"; "X_test.txt"; "y_train.txt"; "y_test.txt"; "subject_train.txt"; "subject_test.txt"; "features.txt" (specifies colClasses = c("character")); "activity_labels.txt" (specifies col.names = c("ActivityId", "Activity"))
 
 1.2. Combines data tables by row bind & column bind: cbind training data sets; cbind test data sets; rbind training data by test data - results in data frame "all_data"
 
