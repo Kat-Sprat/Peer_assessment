@@ -40,8 +40,8 @@ Description of the script run_analysis.R, broken down by project instruction sta
 
 4.1. Takes out brackets using gsub() (find & replace), & adds readable names using make.names() (makes syntactically valid names out of character vectors) and gsub() - uses gsub() to replace several names with human-readable names.
 
-      "5. From the data set in step 4, creates a second, independent tidy data set with the average of each 
-      variable for each activity and each subject."
+      "5. From the data set in step 4, creates a second, independent tidy data set with the 
+      average of each variable for each activity and each subject."
 
 5.1 Creates tidy dataset using ddply to split data frame "all_data_mean_sd" by variables "subject" & "activity", & apply the mean function column-wise, using numcolwise(). Results in data frame "all_data_tidy"
 
