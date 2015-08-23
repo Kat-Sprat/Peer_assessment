@@ -1,6 +1,3 @@
-if (!require("plyr")) {
-        install.packages("plyr")
-}
 require("plyr")
 #You should create one R script called run_analysis.R that does the following:
 #1. Merges the training and the test sets to create one data set.
@@ -48,16 +45,13 @@ names(all_data_mean_sd) <- gsub('\\(|\\)',"",names(all_data_mean_sd), perl = TRU
 #character vectors) and gsub (find & replace)
 names(all_data_mean_sd) <- make.names(names(all_data_mean_sd))
 
-names(all_data_mean_sd) <- gsub('Acc',"Acceleration",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('GyroJerk',"AngularAcceleration",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('Gyro',"AngularSpeed",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('Mag',"Magnitude",names(all_data_mean_sd))
 names(all_data_mean_sd) <- gsub('^t',"TimeDomain.",names(all_data_mean_sd))
 names(all_data_mean_sd) <- gsub('^f',"FrequencyDomain.",names(all_data_mean_sd))
+names(all_data_mean_sd) <- gsub('Acc',"Accelerometer",names(all_data_mean_sd))
+names(all_data_mean_sd) <- gsub('Gyro',"Gyroscope",names(all_data_mean_sd))
+names(all_data_mean_sd) <- gsub('Mag',"Magnitude",names(all_data_mean_sd))
 names(all_data_mean_sd) <- gsub('\\.mean',".Mean",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('\\.std',".StandardDeviation",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('Freq\\.',"Frequency.",names(all_data_mean_sd))
-names(all_data_mean_sd) <- gsub('Freq$',"Frequency",names(all_data_mean_sd))
+names(all_data_mean_sd) <- gsub('\\.std',".Std_Dev",names(all_data_mean_sd))
 
 #5. From the data set in step 4, creates a second, independent tidy data set with 
 #the average of each variable for each activity and each subject.
